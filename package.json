@@ -1,16 +1,21 @@
 {
-  "name": "my-app",
+  "name": "rbowden.com",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "http://rbowden91.com",
+  "private": false,
+  "homepage": "http://rbowden.com",
   "dependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
+    "react-icons": "^3.4.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "styled-components": "^4.1.3"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "flow": "flow",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -26,6 +31,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.93.0",
     "gh-pages": "^2.0.1",
     "serve": "^10.1.2"
   }
