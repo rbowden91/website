@@ -1,23 +1,32 @@
 {
-  "name": "rbowden.com",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rbowden91/website.git"
-  },
-  "author": "Rob Bowden",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rbowden91/website/issues"
-  },
-  "homepage": "https://github.com/rbowden91/website#readme",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://rbowden91.com",
   "dependencies": {
-    "express": "^4.16.3"
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "2.1.5"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "serve": "^10.1.2"
   }
 }
